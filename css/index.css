@@ -1,0 +1,23 @@
+.card{
+
+    width: 25%;
+}
+.carousel{
+    width: 50%;
+    margin: auto;
+}
+.carousel-indicators [data-bs-target]{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: teal;
+}
+
+.carousel-indicators{
+    bottom: -60px;
+}
+
+
+
+
+

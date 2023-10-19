@@ -1,0 +1,92 @@
+<html>
+
+<head>
+  <link rel="stylesheet" href="css/all.min.css" />
+  <link rel="stylesheet" href="css/bootstrap.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+
+  <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <div class="container py-5">
+    <form action="" class="pb-3">
+      <div class="pb-3">
+        <label for="productName" class="mb-3">product Name</label>
+        <input type="text" class="form-control" id="productName">
+      </div>
+      <div class="pb-3">
+        <label for="productprice" class="mb-3">product price</label>
+        <input type="number" class="form-control" id="productprice">
+      </div>
+      <div class="pb-3">
+        <label for="productCategory" class="mb-3">product Category</label>
+        <select name="" id="productCategory" class="form-select">
+          <option value="tv">Tv</option>
+          <option value="mobile">mobile</option>
+          <option value="labtop">labtop</option>
+        </select>
+      </div>
+
+      <div class="pb-3">
+        <label for="ProductInfo" class="mb-3">Product Info</label>
+        <textarea name="" id="ProductInfo" cols="10" rows="5" class="form-control"></textarea>
+      </div>
+
+      <button id="addBtn" onclick="addProduct()" class="btn btn-outline-info"  type="button">Add Product</button>
+      <button id="editBtn" onclick="edit()" class="btn btn-outline-info" style="display: none;" type="button">Edit Product</button>
+      <button class="btn btn-outline-danger" type="reset">Clear Form</button>
+    </form>
+
+    <div class="pb-3">
+      <input type="text" onkeyup="search()" class="form-control w-50 m-auto text-center"
+        placeholder="product Search by name" id="productSearch">
+    </div>
+
+    <table class="table table-striped tabel-hover text-center">
+      <thead>
+        <th>Index</th>
+        <th>Name</th>
+        <th>Price</th>
+        <th>Category</th>
+        <th>Describe</th>
+        <th>Update</th>
+        <th>Delete</th>
+      </thead>
+      <tbody id="tblbody">
+        <!-- <tr>
+            <td>0</td>
+            <td>Nokia</td>
+            <td>3000</td>
+            <td>labtop</td>
+            <td>every hting is good</td>
+            <td><button class="btn btn-info" type="button">Update</button></td>
+            <td><button class="btn btn-danger" type="button">Delete</button></td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Nokia</td>
+            <td>3000</td>
+            <td>labtop</td>
+            <td>every hting is good</td>
+            <td><button class="btn btn-info" type="button">Update</button></td>
+            <td><button class="btn btn-danger" type="button">Delete</button></td>
+          </tr>
+          <tr>
+            <td>0</td>
+            <td>Nokia</td>
+            <td>3000</td>
+            <td>labtop</td>
+            <td>every hting is good</td>
+            <td><button class="btn btn-info" type="button">Update</button></td>
+            <td><button class="btn btn-danger" type="button">Delete</button></td>
+          </tr> -->
+      </tbody>
+    </table>
+
+
+  </div>
+  <script src="js/main.js"></script>
+</body>
+
+</html>
